@@ -1,0 +1,32 @@
+// FONTS:
+
+// - CI: Helvetica Neue (nicht für das Web verfügbar)
+// - HL: “Helvetica Neue Light"
+// - FT: “Helvetica Neue Regular”
+// - FT-bold: “Helvetica Neue Medium”
+// - FT-kursiv: optional
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+h1, h2, h3{
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.ftb{
+    font-weight: 700;
+}
+
+label{
+    font-size: 0.75rem;
+    font-weight: 500;
+}

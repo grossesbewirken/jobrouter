@@ -1,0 +1,15 @@
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex{
+    display: flex;
+    >div{
+        width: 48%;
+    }
+}
+
+.x{
+    border: 2px solid red;
+}

@@ -6,18 +6,34 @@
     --Red: #C05F61;
 }
 
+
+
+// COLORS FOR FONTS
+
 .cBG{
     color: var(--BG)
 }
-
 .cPrimeLight{
     color: var(--PrimeLight)
 }
-
 .cPrimeDark{
     color: var(--PrimeDark)
 }
-
 .cRed{
     color: var(--Red)
+}
+
+// COLORS FOR BACKGROUND
+
+.bgBG{
+    background-color: var(--BG)
+}
+.bgPrimeLight{
+    background-color: var(--PrimeLight)
+}
+.bgPrimeDark{
+    background-color: var(--PrimeDark)
+}
+.bgRed{
+    background-color: var(--Red)
 }

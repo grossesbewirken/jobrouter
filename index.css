@@ -1,0 +1,91 @@
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+.flex > div {
+  width: 48%;
+}
+
+.x {
+  border: 2px solid red;
+}
+
+:root {
+  --BG: #D7DFE4;
+  --PrimeLight: #5A7F9B;
+  --PrimeDark: #002A49;
+  --Red: #C05F61;
+}
+
+.cBG {
+  color: var(--BG);
+}
+
+.cPrimeLight {
+  color: var(--PrimeLight);
+}
+
+.cPrimeDark {
+  color: var(--PrimeDark);
+}
+
+.cRed {
+  color: var(--Red);
+}
+
+.bgBG {
+  background-color: var(--BG);
+}
+
+.bgPrimeLight {
+  background-color: var(--PrimeLight);
+}
+
+.bgPrimeDark {
+  background-color: var(--PrimeDark);
+}
+
+.bgRed {
+  background-color: var(--Red);
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.ftb {
+  font-weight: 700;
+}
+
+label {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+form {
+  background-color: green;
+}
+
+.logo > * {
+  width: 100px;
+}
+
+header {
+  background-color: var(--Red);
+}
+
+/*# sourceMappingURL=index.css.map */

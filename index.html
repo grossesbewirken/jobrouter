@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/index.css">
+
+    <!-- FONTS: INTER -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="index.css">
     <title>landingpage</title>
 </head>
 <body>
@@ -13,8 +20,58 @@
             <img src="/images/logo_regularsvg.svg" alt="companylogo of supainc.">
         </div>
     </header>
-    <form action="">
-        <p class="cRed">test</p>
+    <section>
+        <h1>First impsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptas incidunt odit! Velit nesciunt iste optio. Nostrum perferendis fugiat amet.</p>
+    </section>
+    <section>
+        <h1>Second sit amet cons ectetuer adi</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium veritatis facilis cupiditate nesciunt vitae, doloremque obcaecati velit inventore qui nostrum.</p>
+    </section>
+    <section>
+        <h1>Third Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium veritatis facilis cupiditate nesciunt vitae, doloremque obcaecati velit inventore qui nostrum.</p>
+    </section>
+    <form>
+        <div class="flex">
+            <div class="col">
+                <input
+                type="text"
+                name="firstName"
+                placeholder="Max">
+                </input>
+                <label>Vorname</label>
+            </div>
+            <div class="col">
+                <input
+                type="text"
+                name="lastName"
+                placeholder="Mustermann">
+                </input>
+                <label>Nachname</label>
+            </div>
+
+            <div class="col">
+                <input
+                type="text"
+                name="topic"
+                placeholder="Betreff:">
+                </input>
+                <label>Betreff</label>
+            </div>
+            <div class="col">
+                <input
+                type="text"
+                name="message"
+                placeholder="Sehr geehrte...">
+                </input>
+                <label>Betreff</label>
+            </div>
+        </div>
+        <button
+            type="submit"
+            >Senden
+        </button>
     </form>
 </body>
 </html>
