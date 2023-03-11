@@ -17,6 +17,25 @@ ELEMENTS:
 - Text
 - Kontakt-Formular
 
+RECHERCHE:
+The essential components of an effective landing page are:
+
+1st.
+- A main headline and a supporting headline.
+- A unique selling proposition.
+
+2nd.
+- The benefits of your offering.
+Images or video showing context of use.
+
+3rd.
+- Social proof.
+- A reinforcement statement.
+
+4th.
+A closing argument.
+A call to action.
+
 - - - - - - - - - - - - - - - - - - - - - - - -
 
 FORMULAR:
