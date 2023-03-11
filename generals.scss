@@ -1,3 +1,9 @@
+body, html{
+    height: 100%;
+}
+
+
+// GENERAL CLASSES
 .col{
     display: flex;
     flex-direction: column;
@@ -5,11 +11,26 @@
 
 .flex{
     display: flex;
-    >div{
-        width: 48%;
-    }
 }
 
-.x{
-    border: 2px solid red;
+
+
+
+// EFFECTS
+.parallax{
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media only screen and (max-device-width: 400px) {
+        background-attachment: scroll;
+    }
+}
+.blur{
+    padding: 2rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    margin-left: 50px;
+    margin-right: 50px;
 }

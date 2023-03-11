@@ -1,15 +1,13 @@
 // => CI-Blaugrau hell / Eingesetzt für den Hintergrund/Weißraum
 :root{
-    --BG: #D7DFE4;
-    --PrimeLight: #5A7F9B;
-    --PrimeDark: #002A49;
-    --Red: #C05F61;
+    --BG: rgb(215, 223, 228);
+    --PrimeLight: rgb(90, 127, 155);
+    --PrimeDark: rgb(0, 42, 73);
+    --Red: rgb(192, 95, 97);
 }
 
 
-
 // COLORS FOR FONTS
-
 .cBG{
     color: var(--BG)
 }
@@ -23,8 +21,8 @@
     color: var(--Red)
 }
 
-// COLORS FOR BACKGROUND
 
+// COLORS FOR BACKGROUND
 .bgBG{
     background-color: var(--BG)
 }
@@ -37,3 +35,9 @@
 .bgRed{
     background-color: var(--Red)
 }
+
+
+// DAS CONSOLE LOG des DESIGNERS
+.x{ border: 2px solid rgb(255, 0, 157) };
+.y{ border: 2px solid rgb(0, 255, 251) };
+.z{ border: 2px solid rgb(149, 255, 0) };

@@ -1,3 +1,65 @@
 form{
-    background-color: green;
+    border: 2px solid greenyellow;
+    display: flex;
+    flex-direction: column;
+    .name{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        >*{
+            width: 50%;
+        }
+    }
+    input{
+        cursor: pointer;
+        background-color: rgba(0,0,0,0);
+        border-bottom: 1px solid var(--BG);
+        color: var(--BG);
+        padding: 0.8rem 0;
+    }
+    textarea{
+        cursor: pointer;
+        background-color: rgba(0,0,0,0);
+        border: 1px solid var(--BG);
+        color: var(--BG);
+        padding: 1.2rem;
+        border-radius: 8px;
+    }
 }
+
+button{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    outline: 2px solid var(--BG);
+    color: var(--BG);
+    padding: 0.5rem;
+    border-radius: 50px;
+    margin: auto;
+    width: 150px;
+    margin-bottom: 0.5rem;
+    transition: 200ms;
+    &:hover{
+        box-shadow: 0rem 0rem 1rem rgba(25,29,41, 0.5);
+        outline: 2px solid white;
+        color: white;
+    }
+}
+
+// IMAGES
+.logo{
+    >*{width: 100px;}
+}
+.hero1{
+    background-image: url("/images/hero_1.jpg");
+}
+.hero2{
+    background-image: url("/images/hero_2.jpg");
+}
+.hero3{
+    background-image: url("/images/hero_3.jpg");
+}
+.hero4{
+    background-image: url("/images/hero_4.jpg");
+}
+
+

@@ -1,3 +1,7 @@
+body, html {
+  height: 100%;
+}
+
 .col {
   display: flex;
   flex-direction: column;
@@ -6,19 +10,33 @@
 .flex {
   display: flex;
 }
-.flex > div {
-  width: 48%;
+
+.parallax {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-device-width: 400px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 }
 
-.x {
-  border: 2px solid red;
+.blur {
+  padding: 2rem;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 :root {
-  --BG: #D7DFE4;
-  --PrimeLight: #5A7F9B;
-  --PrimeDark: #002A49;
-  --Red: #C05F61;
+  --BG: rgb(215, 223, 228);
+  --PrimeLight: rgb(90, 127, 155);
+  --PrimeDark: rgb(0, 42, 73);
+  --Red: rgb(192, 95, 97);
 }
 
 .cBG {
@@ -53,6 +71,18 @@
   background-color: var(--Red);
 }
 
+.x {
+  border: 2px solid rgb(255, 0, 157);
+}
+
+.y {
+  border: 2px solid rgb(0, 255, 251);
+}
+
+.z {
+  border: 2px solid rgb(149, 255, 0);
+}
+
 * {
   font-family: "Inter", sans-serif;
 }
@@ -77,15 +107,79 @@ label {
 }
 
 form {
-  background-color: green;
+  border: 2px solid greenyellow;
+  display: flex;
+  flex-direction: column;
+}
+form .name {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+form .name > * {
+  width: 50%;
+}
+form input {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid var(--BG);
+  color: var(--BG);
+  padding: 0.8rem 0;
+}
+form textarea {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid var(--BG);
+  color: var(--BG);
+  padding: 1.2rem;
+  border-radius: 8px;
+}
+
+button {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  outline: 2px solid var(--BG);
+  color: var(--BG);
+  padding: 0.5rem;
+  border-radius: 50px;
+  margin: auto;
+  width: 150px;
+  margin-bottom: 0.5rem;
+  transition: 200ms;
+}
+button:hover {
+  box-shadow: 0rem 0rem 1rem rgba(25, 29, 41, 0.5);
+  outline: 2px solid white;
+  color: white;
 }
 
 .logo > * {
   width: 100px;
 }
 
-header {
-  background-color: var(--Red);
+.hero1 {
+  background-image: url("/images/hero_1.jpg");
+}
+
+.hero2 {
+  background-image: url("/images/hero_2.jpg");
+}
+
+.hero3 {
+  background-image: url("/images/hero_3.jpg");
+}
+
+.hero4 {
+  background-image: url("/images/hero_4.jpg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=index.css.map */

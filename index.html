@@ -6,51 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- FONTS: INTER -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>landingpage</title>
 </head>
+
 <body>
     <header>
         <div class="logo">
             <img src="/images/logo_regularsvg.svg" alt="companylogo of supainc.">
         </div>
     </header>
-    <section>
+    <section class="parallax hero1">
         <h1>First impsum dolor sit amet</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptas incidunt odit! Velit nesciunt iste optio. Nostrum perferendis fugiat amet.</p>
     </section>
-    <section>
+    <section class="parallax hero3">
         <h1>Second sit amet cons ectetuer adi</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium veritatis facilis cupiditate nesciunt vitae, doloremque obcaecati velit inventore qui nostrum.</p>
     </section>
-    <section>
+    <section class="parallax hero4">
         <h1>Third Lorem ipsum dolor sit amet</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium veritatis facilis cupiditate nesciunt vitae, doloremque obcaecati velit inventore qui nostrum.</p>
     </section>
-    <form>
-        <div class="flex">
-            <div class="col">
-                <input
-                type="text"
-                name="firstName"
-                placeholder="Max">
-                </input>
-                <label>Vorname</label>
-            </div>
-            <div class="col">
-                <input
-                type="text"
-                name="lastName"
-                placeholder="Mustermann">
-                </input>
-                <label>Nachname</label>
-            </div>
 
+    <section class="parallax hero2">
+        <form class="name blur">
+            <div >
+                <div class="col">
+                    <input
+                    type="text"
+                    name="firstName"
+                    placeholder="Max">
+                    </input>
+                    <label>Vorname</label>
+                </div>
+                <div class="col">
+                    <input
+                    type="text"
+                    name="lastName"
+                    placeholder="Mustermann">
+                    </input>
+                    <label>Nachname</label>
+                </div>
+            </div>
             <div class="col">
                 <input
                 type="text"
@@ -60,18 +61,19 @@
                 <label>Betreff</label>
             </div>
             <div class="col">
-                <input
-                type="text"
-                name="message"
-                placeholder="Sehr geehrte...">
-                </input>
-                <label>Betreff</label>
+                <textarea placeholder="Darum geht es hier..."
+                    type="text"
+                    name="message"
+                >
+                </textarea>
+                <label>Ihre Nachricht an uns</label>
             </div>
-        </div>
-        <button
-            type="submit"
-            >Senden
-        </button>
-    </form>
+
+            <button
+                type="submit"
+                >Senden
+            </button>
+        </form>
+    </section>
 </body>
 </html>
