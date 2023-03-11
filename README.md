@@ -104,4 +104,4 @@ PRESENTATION:
 = = = = = = = = = = = = = = = = = = = = = = = =
 
 If you designers wanne have fun, activate the SASS-WATCHER
-(npx sass --watch input.scss output.css)
+(npx sass --watch index.scss index.css)
