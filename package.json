@@ -1,0 +1,23 @@
+{
+  "name": "jobrouter",
+  "version": "1.0.0",
+  "description": "Hello,",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grossesbewirken/jobrouter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grossesbewirken/jobrouter/issues"
+  },
+  "homepage": "https://github.com/grossesbewirken/jobrouter#readme",
+  "dependencies": {
+    "sass": "^1.59.2"
+  }
+}

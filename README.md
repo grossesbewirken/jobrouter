@@ -100,3 +100,8 @@ PRESENTATION:
 - Solltest du gewisse Probleme haben - egal ob du sie lösen konntest oder nicht - notiere diese und spreche sie an. 
 - Auch wenn du neue Funktionen, Techniken oder ähnliches ausprobiert hast, möchten wir davon sehr gerne erfahren. 
 - Ansonsten freuen wir uns auf dein Ergebnis und wünschen dir viel Erfolg!
+
+= = = = = = = = = = = = = = = = = = = = = = = =
+
+If you designers wanne have fun, activate the SASS-WATCHER
+(npx sass --watch input.scss output.css)
