@@ -1,5 +1,6 @@
 body, html {
   height: 100%;
+  position: relative;
 }
 
 .col {
@@ -11,31 +12,32 @@ body, html {
   display: flex;
 }
 
-.parallax {
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media only screen and (max-device-width: 400px) {
-  .parallax {
-    background-attachment: scroll;
-  }
+.mbXL {
+  margin-bottom: 3rem;
 }
 
-.blur {
-  padding: 2rem;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  margin-left: 50px;
-  margin-right: 50px;
+.split {
+  display: flex;
+  gap: 2rem;
+}
+@media screen and (min-width: 600px) {
+  .split {
+    gap: 4rem;
+  }
+}
+@media screen and (min-width: 750px) {
+  .split {
+    gap: 6rem;
+  }
 }
 
 :root {
   --BG: rgb(215, 223, 228);
+  --BG-trans: rgba(215, 223, 228, 0.5);
   --PrimeLight: rgb(90, 127, 155);
   --PrimeDark: rgb(0, 42, 73);
+  --PrimeDark-trans:rgba(0, 42, 73, 0.5);
+  --PrimeDarker: rgb(0, 26, 45);
   --Red: rgb(192, 95, 97);
 }
 
@@ -85,31 +87,95 @@ body, html {
 
 * {
   font-family: "Inter", sans-serif;
+  color: white;
 }
 
-h1, h2, h3 {
+h1 {
+  font-weight: 900;
+  margin: 1rem 0;
   font-size: 3rem;
-  font-weight: 300;
+  line-height: 1;
+}
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+}
+@media screen and (min-width: 750px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+h3 {
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+@media screen and (min-width: 600px) {
+  h3 {
+    font-size: 1.35rem;
+  }
+}
+@media screen and (min-width: 750px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+h4 {
+  font-size: 1.15rem;
+  font-weight: 500;
 }
 
 p {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
+  margin: 0.75rem 0;
 }
 
-.ftb {
+.p-bold {
   font-weight: 700;
 }
 
 label {
   font-size: 0.75rem;
   font-weight: 500;
+  color: var(--BG-trans);
+  margin-top: 0.25rem;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background-color: var(--PrimeDark);
+}
+nav .logo {
+  display: flex;
+  margin-left: 1rem;
+}
+nav .logo > * {
+  width: 100px;
+}
+nav .menu {
+  display: flex;
+}
+nav .menu button {
+  margin: auto;
+  border: 0;
+  padding: 0;
+  outline: 0;
 }
 
 form {
-  border: 2px solid greenyellow;
   display: flex;
   flex-direction: column;
+}
+form > * {
+  margin-bottom: 1rem;
 }
 form .name {
   display: flex;
@@ -153,8 +219,28 @@ button:hover {
   color: white;
 }
 
-.logo > * {
-  width: 100px;
+.video {
+  margin-top: 1rem;
+  display: flex;
+  width: 300px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.video > * {
+  width: 100%;
+}
+
+.pic {
+  margin-top: 1rem;
+  display: flex;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.pic > * {
+  width: 100%;
 }
 
 .hero1 {
@@ -173,6 +259,26 @@ button:hover {
   background-image: url("/images/hero_4.jpg");
 }
 
+.bg1 {
+  background-image: url("/images/bg_dark_1.png");
+}
+
+.bg3 {
+  background-image: url("/images/bg_dark_3.png");
+}
+
+.bg4 {
+  background-image: url("/images/bg_dark_4.png");
+}
+
+.bg5 {
+  background-image: url("/images/bg_dark_5.png");
+}
+
+.laptop {
+  background-image: url("/images/laptop.png");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -180,6 +286,48 @@ button:hover {
   font-size: 100%;
   vertical-align: baseline;
   box-sizing: border-box;
+}
+
+.parallax {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+@media only screen and (max-device-width: 400px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+.parallax > * {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: 90%;
+}
+@media screen and (min-width: 600px) {
+  .parallax > * {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .parallax > * {
+    width: 60%;
+  }
+}
+
+.blur {
+  padding: 2rem;
+  margin-top: 2rem;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: var(--PrimeDark-trans);
+}
+
+.shadow {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
 /*# sourceMappingURL=index.css.map */

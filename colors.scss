@@ -1,8 +1,11 @@
 // => CI-Blaugrau hell / Eingesetzt für den Hintergrund/Weißraum
 :root{
     --BG: rgb(215, 223, 228);
+    --BG-trans: rgba(215, 223, 228, 0.5);
     --PrimeLight: rgb(90, 127, 155);
     --PrimeDark: rgb(0, 42, 73);
+    --PrimeDark-trans:rgba(0, 42, 73, 0.5);
+    --PrimeDarker: rgb(0, 26, 45);
     --Red: rgb(192, 95, 97);
 }
 

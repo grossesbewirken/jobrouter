@@ -1,5 +1,6 @@
 body, html{
     height: 100%;
+    position: relative;
 }
 
 
@@ -13,24 +14,18 @@ body, html{
     display: flex;
 }
 
-
-
-
-// EFFECTS
-.parallax{
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    @media only screen and (max-device-width: 400px) {
-        background-attachment: scroll;
-    }
+.mbXL{
+    margin-bottom: 3rem;
 }
-.blur{
-    padding: 2rem;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    margin-left: 50px;
-    margin-right: 50px;
+
+
+.split{
+    display: flex;
+    gap: 2rem;
+    @media screen and (min-width: 600px){
+        gap: 4rem;
+    }
+    @media screen and (min-width: 750px){
+        gap: 6rem;
+    }
 }

@@ -1,32 +1,62 @@
-// FONTS:
-
-// - CI: Helvetica Neue (nicht für das Web verfügbar)
-// - HL: “Helvetica Neue Light"
-// - FT: “Helvetica Neue Regular”
-// - FT-bold: “Helvetica Neue Medium”
-// - FT-kursiv: optional
-
 *{
     font-family: 'Inter', sans-serif;
+    color: white;
 }
 
 
-
-h1, h2, h3{
+// -> HL: “Helvetica Neue Light"
+// {font-weight: 300}
+h1{
+    font-weight: 900;
+    margin: 1rem 0;
     font-size: 3rem;
-    font-weight: 300;
+    line-height: 1;
+    @media screen and (min-width: 600px){
+        font-size: 4.5rem;
+    }
+    @media screen and (min-width: 750px){
+        font-size: 6rem;
+    }
 }
 
-p{
-    font-size: 1rem;
+
+h3{
+    font-weight: 900;
+    font-size: 1.1rem;
+    @media screen and (min-width: 600px){
+        font-size: 1.35rem;
+    }
+    @media screen and (min-width: 750px){
+        font-size: 1.5rem;
+    }
+}
+
+
+h4{
+    font-size: 1.15rem;
     font-weight: 500;
 }
 
-.ftb{
+
+// -> FT: “Helvetica Neue Regular”
+// {font-weight: 500}
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0.75rem 0;
+}
+
+
+// -> FT-bold: “Helvetica Neue Medium”
+// {font-weight: 700}
+.p-bold{
     font-weight: 700;
 }
+
 
 label{
     font-size: 0.75rem;
     font-weight: 500;
+    color: var(--BG-trans);
+    margin-top: 0.25rem;
 }

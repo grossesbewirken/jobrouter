@@ -1,0 +1,36 @@
+// EFFECTS
+.parallax{
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    @media only screen and (max-device-width: 400px) {
+        background-attachment: scroll;
+    }
+    >*{
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        width: 90%;
+        @media screen and (min-width: 600px){
+            width: 75%;
+        }
+        @media screen and (min-width: 750px){
+            width: 60%;
+        }
+    }
+}
+
+.blur{
+    padding: 2rem;
+    margin-top: 2rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: var(--PrimeDark-trans);
+}
+
+.shadow{
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
+}
