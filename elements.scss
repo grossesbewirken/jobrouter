@@ -85,17 +85,47 @@ button{
     }
 }
 
-.pic{
-    margin-top: 1rem;
+
+.benefit-container{
     display: flex;
-    width: 100%;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 8px;
-    >*{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .benefit{
+        margin-top: 1rem;
+        display: flex;
+        object-fit: contain;
+        overflow: hidden;
+        border-radius: 8px;
+        width: 50%;
+        @media screen and (min-width: 750px){
         width: 100%;
+        }
+        >*{
+            width: 100%;
+        }
     }
 }
+
+
+.testimonial-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .testimonial{
+        margin-top: 1rem;
+        display: flex;
+        object-fit: contain;
+        overflow: hidden;
+        border-radius: 8px;
+        height: 40px;
+        @media screen and (min-width: 750px){
+        height: 60px;
+        }
+    }
+}
+
 
 
 
@@ -116,16 +146,16 @@ button{
 }
 
 .bg1{
-    background-image: url("/images/bg_dark_1.png");
+    background-image: url("/images/bg_dark_1_40.png");
 }
 .bg3{
-    background-image: url("/images/bg_dark_3.png");
+    background-image: url("/images/bg_dark_3_40.png");
 }
 .bg4{
-    background-image: url("/images/bg_dark_4.png");
+    background-image: url("/images/bg_dark_4_40.png");
 }
 .bg5{
-    background-image: url("/images/bg_dark_5.png");
+    background-image: url("/images/bg_dark_5_40.png");
 }
 .laptop{
     background-image: url("/images/laptop.png");

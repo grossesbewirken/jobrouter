@@ -21,11 +21,9 @@ body, html{
 
 .split{
     display: flex;
-    gap: 2rem;
-    @media screen and (min-width: 600px){
-        gap: 4rem;
-    }
+    flex-direction: column;
     @media screen and (min-width: 750px){
-        gap: 6rem;
+        flex-direction: row;
+        gap: 4rem;
     }
 }

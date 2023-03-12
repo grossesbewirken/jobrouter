@@ -18,16 +18,12 @@ body, html {
 
 .split {
   display: flex;
-  gap: 2rem;
-}
-@media screen and (min-width: 600px) {
-  .split {
-    gap: 4rem;
-  }
+  flex-direction: column;
 }
 @media screen and (min-width: 750px) {
   .split {
-    gap: 6rem;
+    flex-direction: row;
+    gap: 4rem;
   }
 }
 
@@ -94,7 +90,7 @@ h1 {
   font-weight: 900;
   margin: 1rem 0;
   font-size: 3rem;
-  line-height: 1;
+  line-height: 1.1;
 }
 @media screen and (min-width: 600px) {
   h1 {
@@ -124,6 +120,11 @@ h3 {
 
 h4 {
   font-size: 1.15rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
@@ -231,16 +232,47 @@ button:hover {
   width: 100%;
 }
 
-.pic {
+.benefit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.benefit-container .benefit {
   margin-top: 1rem;
   display: flex;
-  width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   overflow: hidden;
   border-radius: 8px;
+  width: 50%;
 }
-.pic > * {
+@media screen and (min-width: 750px) {
+  .benefit-container .benefit {
+    width: 100%;
+  }
+}
+.benefit-container .benefit > * {
   width: 100%;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.testimonial-container .testimonial {
+  margin-top: 1rem;
+  display: flex;
+  object-fit: contain;
+  overflow: hidden;
+  border-radius: 8px;
+  height: 40px;
+}
+@media screen and (min-width: 750px) {
+  .testimonial-container .testimonial {
+    height: 60px;
+  }
 }
 
 .hero1 {
@@ -260,19 +292,19 @@ button:hover {
 }
 
 .bg1 {
-  background-image: url("/images/bg_dark_1.png");
+  background-image: url("/images/bg_dark_1_40.png");
 }
 
 .bg3 {
-  background-image: url("/images/bg_dark_3.png");
+  background-image: url("/images/bg_dark_3_40.png");
 }
 
 .bg4 {
-  background-image: url("/images/bg_dark_4.png");
+  background-image: url("/images/bg_dark_4_40.png");
 }
 
 .bg5 {
-  background-image: url("/images/bg_dark_5.png");
+  background-image: url("/images/bg_dark_5_40.png");
 }
 
 .laptop {

@@ -10,7 +10,7 @@ h1{
     font-weight: 900;
     margin: 1rem 0;
     font-size: 3rem;
-    line-height: 1;
+    line-height: 1.1;
     @media screen and (min-width: 600px){
         font-size: 4.5rem;
     }
@@ -37,6 +37,10 @@ h4{
     font-weight: 500;
 }
 
+h5{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
 
 // -> FT: “Helvetica Neue Regular”
 // {font-weight: 500}
