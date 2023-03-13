@@ -17,6 +17,9 @@ ELEMENTS:
 - Text
 - Kontakt-Formular
 
+
+- - - - - - - - - - - - - - - - - - - - - - - -
+
 RECHERCHE:
 The essential components of an effective landing page are:
 
@@ -26,15 +29,18 @@ The essential components of an effective landing page are:
 
 2nd.
 - The benefits of your offering.
-Images or video showing context of use.
+- Images or video showing context of use.
 
 3rd.
-- Social proof.
+- Benefit-driven features
+
+4th
+- Social proof
 - A reinforcement statement.
 
-4th.
-A closing argument.
-A call to action.
+5th.
+- A closing argument.
+- A call to action.
 
 - - - - - - - - - - - - - - - - - - - - - - - -
 
