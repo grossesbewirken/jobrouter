@@ -127,6 +127,16 @@ button{
 }
 
 
+.w50px{
+    display: flex;
+    margin:auto;
+    width: 50px;
+    >*{
+        display: flex;
+        margin: auto;
+        width: 20px;
+    }
+}
 
 
 
@@ -160,4 +170,5 @@ button{
 .laptop{
     background-image: url("/images/laptop.png");
 }
+
 

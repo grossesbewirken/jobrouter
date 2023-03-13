@@ -27,6 +27,10 @@ body, html {
   }
 }
 
+.ma-auto {
+  margin: auto;
+}
+
 :root {
   --BG: rgb(215, 223, 228);
   --BG-trans: rgba(215, 223, 228, 0.5);
@@ -273,6 +277,17 @@ button:hover {
   .testimonial-container .testimonial {
     height: 60px;
   }
+}
+
+.w50px {
+  display: flex;
+  margin: auto;
+  width: 50px;
+}
+.w50px > * {
+  display: flex;
+  margin: auto;
+  width: 20px;
 }
 
 .hero1 {
