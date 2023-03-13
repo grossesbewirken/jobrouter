@@ -351,6 +351,7 @@ button:hover {
 }
 
 .blur {
+  border-radius: 8px;
   padding: 2rem;
   margin-top: 2rem;
   -webkit-backdrop-filter: blur(10px);
