@@ -146,7 +146,7 @@ label {
   font-size: 0.75rem;
   font-weight: 500;
   color: var(--BG-trans);
-  margin-top: 0.25rem;
+  margin-top: 0.3rem;
 }
 
 nav {
@@ -291,39 +291,39 @@ button:hover {
 }
 
 .hero1 {
-  background-image: url("./images/hero_1.jpg");
+  background-image: url("../images/hero_1.jpg");
 }
 
 .hero2 {
-  background-image: url("./images/hero_2.jpg");
+  background-image: url("../images/hero_2.jpg");
 }
 
 .hero3 {
-  background-image: url("./images/hero_3.jpg");
+  background-image: url("../images/hero_3.jpg");
 }
 
 .hero4 {
-  background-image: url("./images/hero_4.jpg");
+  background-image: url("../images/hero_4.jpg");
 }
 
 .bg1 {
-  background-image: url("./images/bg_dark_1_40.png");
+  background-image: url("../images/bg_dark_1_40.png");
 }
 
 .bg3 {
-  background-image: url("./images/bg_dark_3_40.png");
+  background-image: url("../images/bg_dark_3_40.png");
 }
 
 .bg4 {
-  background-image: url("./images/bg_dark_4_40.png");
+  background-image: url("../images/bg_dark_4_40.png");
 }
 
 .bg5 {
-  background-image: url("./images/bg_dark_5_40.png");
+  background-image: url("../images/bg_dark_5_40.png");
 }
 
 .laptop {
-  background-image: url("./images/laptop.png");
+  background-image: url("../images/laptop.png");
 }
 
 * {
